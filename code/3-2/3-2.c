@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 void swap_endian(int* x) {
-    unsigned char* p = (unsigned char*)x;
-    unsigned char tmp;
-    tmp = p[0]; p[0] = p[3]; p[3] = tmp;
-    tmp = p[1]; p[1] = p[2]; p[2] = tmp;
+    unsigned char*k  = (unsigned char*)x;
+    unsigned char gal;
+    gal = k[0]; k[0] = k[3]; k[3] = gal;
+    gal = k[1]; k[1] = k[2]; k[2] = gal;
 }
 
 int main() {
