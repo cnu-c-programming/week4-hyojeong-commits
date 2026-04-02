@@ -8,11 +8,11 @@ void swap_endian(int* x) {
 }
 
 int main() {
-    int val = 0x12345678;
+    int x = 0x12345678;
   
-    printf("before: 0x%08X\n", val);   
-    swap_endian(&val);
-    printf("after:  0x%08X\n", val);   
+    printf("%x\n", x);   
+    swap_endian(&x);
+    printf("%x\n", x);   
   
     return 0;
 }
