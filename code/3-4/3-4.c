@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void inc(int*x) {
+  *x = *x + 1;
+  printf("%d\n", *x);
+}
+
+int main() {
+  int c =3;
+
+  int(&x);
+  inc(NULL);
+
+  return 0;
+}
